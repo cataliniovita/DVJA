@@ -1,0 +1,26 @@
+.container {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.cards {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.chartSection {
+    margin-top: 30px;
+}
+
+.chartSection h2 {
+    text-align: center;
+}

@@ -1,0 +1,95 @@
+/* RegisterPage.css */
+
+.register {
+    background-color: #f0f4f8;
+}
+
+.register-container {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+h2 {
+    color: #333;
+    font-size: 28px;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+.register-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.input-group-reg {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.input-group-reg label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #555;
+}
+
+.input-group-reg input {
+    width: 350px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    background-color: #f9f9f9;
+    color: #333;
+    transition: border-color 0.3s ease;
+}
+
+.input-group-reg input:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+.error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.register-button {
+    width: 350px;
+    padding: 12px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.register-button:hover {
+    background-color: #4d4c4c;
+}
+
+.register-button:focus {
+    outline: none;
+}
+
+@media (max-width: 500px) {
+    .register-container {
+        padding: 20px;
+        width: 100%;
+        max-width: 90%;
+    }
+}

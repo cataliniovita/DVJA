@@ -1,0 +1,125 @@
+.savings-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.savings-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.savings-goals {
+    font-family: Arial, sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    height: 100%;
+    flex: 1;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.add-goal {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 40px;
+}
+
+.add-goal input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.add-goal button {
+    background-color: #000;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.add-goal button:hover {
+    background-color: #333;
+}
+
+.goal {
+    margin-bottom: 30px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.goal h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.progress-bar {
+    background-color: #eee;
+    border-radius: 10px;
+    height: 10px;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+.progress {
+    background-color: #000;
+    height: 100%;
+}
+
+.goal p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.contribute {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.contribute input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.contribute button {
+    background-color: #000;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.contribute button:hover {
+    background-color: #333;
+}
+
+.delete-button-saving {
+    background-color: #1a1a1a;
+    color: white;
+    border: none;
+    height: 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+.delete-button-saving:hover {
+    background-color: #4d4c4c;
+    color: white;
+}

@@ -1,0 +1,117 @@
+/* SpendingPage.css */
+
+
+.spending-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.spending-page {
+    background: #ffffff;
+    padding: 20px;
+    margin:20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    flex:1;
+}
+
+.title-spending {
+    text-align: center;
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.subtitle-spending {
+    font-size: 18px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.spending-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group-spending {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #555;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    outline: none;
+}
+
+input:focus,
+select:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.submit-button-spending {
+    width: 300px;
+    padding: 10px;
+    background-color: #333;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.submit-button-spending:hover {
+    background-color: #555;
+}
+
+.transactions-table-spending {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.transactions-table-spending th,
+.transactions-table-spending td {
+    text-align: left;
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+.transactions-table-spending th {
+    background-color: #f8f9fa;
+    color: #555;
+}
+
+.transactions-table-spending tbody tr:nth-child(odd) {
+    background-color: #f9f9f9;
+}
+
+.delete-button {
+    background-color: #1a1a1a;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+.delete-button:hover {
+    background-color: #4d4c4c;
+    color: white;
+}

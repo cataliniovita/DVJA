@@ -1,0 +1,54 @@
+.chartContainer {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    height: 200px;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 10px;
+}
+
+.barGroup {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hide {
+    display: none;
+}
+
+.bar {
+    width: 200px;
+    background: #101541;
+    border-radius: 5px 5px 0 0;
+    transition: height 0.3s ease;
+}
+
+.bar:hover {
+    background: #616be8;
+    transition: 0.3s ease;
+}
+
+.bar .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+}
+
+.bar:hover .tooltiptext {
+    visibility: visible;
+}
+
+.label {
+    margin-top: 10px;
+    font-size: 0.8rem;
+    text-align: center;
+}
