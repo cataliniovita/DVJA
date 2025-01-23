@@ -1,9 +1,9 @@
 {
 	"info": {
-		"_postman_id": "5562865f-702c-492f-88c5-afca413155a3",
+		"_postman_id": "54eb2397-ff66-4c58-b284-76f456f06f97",
 		"name": "Budget Planner",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-		"_exporter_id": "40960565"
+		"_exporter_id": "39829518"
 	},
 	"item": [
 		{
@@ -13,7 +13,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"email\": \"test1.user@user.com\",\n    \"password\": \"qwerty\",\n    \"fullName\": \"Test User\"\n}",
+					"raw": "{\n    \"email\": \"test.user@user.com\",\n    \"password\": \"qwerty\",\n    \"fullName\": \"Test User\"\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -72,7 +72,7 @@
 					"bearer": [
 						{
 							"key": "token",
-							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0ZXN0LnVzZXJAdXNlci5jb20iLCJpYXQiOjE3MzY3ODExNjEsImV4cCI6MTczNjc4NDc2MX0.pW-r303_D-umOwk9RBHLWwFcb3RnvdsLvPLXR6kdhYA",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0ZXN0LnVzZXJAdXNlci5jb20iLCJpYXQiOjE3MzY5Njc2MDMsImV4cCI6MTczNjk3MTIwM30.e6J86Lk0XO1r0M-WzMxi5qIZH3ex0M0nYUy7VIZ3-IU",
 							"type": "string"
 						}
 					]
@@ -89,6 +89,465 @@
 					"path": [
 						"users",
 						"me"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Authenticated users",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0ZXN0LnVzZXJAdXNlci5jb20iLCJpYXQiOjE3MzY5Njc2MDMsImV4cCI6MTczNjk3MTIwM30.e6J86Lk0XO1r0M-WzMxi5qIZH3ex0M0nYUy7VIZ3-IU",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Authenticated user",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0ZXN0LnVzZXJAdXNlci5jb20iLCJpYXQiOjE3MzY5Njc2MDMsImV4cCI6MTczNjk3MTIwM30.e6J86Lk0XO1r0M-WzMxi5qIZH3ex0M0nYUy7VIZ3-IU",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/users/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"users",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Authenticated Budgets",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0ZXN0LnVzZXJAdXNlci5jb20iLCJpYXQiOjE3MzY5Njc2MDMsImV4cCI6MTczNjk3MTIwM30.e6J86Lk0XO1r0M-WzMxi5qIZH3ex0M0nYUy7VIZ3-IU",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/budgets/user/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"budgets",
+						"user",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST Authenticated Budgets",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0ZXN0LnVzZXJAdXNlci5jb20iLCJpYXQiOjE3MzY5Njc2MDMsImV4cCI6MTczNjk3MTIwM30.e6J86Lk0XO1r0M-WzMxi5qIZH3ex0M0nYUy7VIZ3-IU",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"user\": {\r\n    \"id\": 1\r\n  },\r\n  \"totalBudget\": 9000.0,\r\n  \"foodBudget\": 100.0,\r\n  \"transportBudget\": 300.0,\r\n  \"entertainmentBudget\": 200.0,\r\n  \"utilitiesBudget\": 500.0,\r\n  \"otherBudget\": 500.0\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/budgets",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"budgets"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT Authenticated Budgets",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0ZXN0LnVzZXJAdXNlci5jb20iLCJpYXQiOjE3MzY5Njc2MDMsImV4cCI6MTczNjk3MTIwM30.e6J86Lk0XO1r0M-WzMxi5qIZH3ex0M0nYUy7VIZ3-IU",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"totalBudget\": 1.0,\r\n  \"foodBudget\": 1.0,\r\n  \"transportBudget\": 1.0,\r\n  \"entertainmentBudget\": 1.0,\r\n  \"utilitiesBudget\": 1.0,\r\n  \"otherBudget\": 1.0\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/budgets/4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"budgets",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Authenticated Savings",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0ZXN0LnVzZXJAdXNlci5jb20iLCJpYXQiOjE3MzY5Njc2MDMsImV4cCI6MTczNjk3MTIwM30.e6J86Lk0XO1r0M-WzMxi5qIZH3ex0M0nYUy7VIZ3-IU",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/savings/user/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"savings",
+						"user",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST Authenticated Savings",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0ZXN0LnVzZXJAdXNlci5jb20iLCJpYXQiOjE3MzY5Njc2MDMsImV4cCI6MTczNjk3MTIwM30.e6J86Lk0XO1r0M-WzMxi5qIZH3ex0M0nYUy7VIZ3-IU",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"user\": {\r\n    \"id\": 1\r\n  },\r\n  \"goalName\": \"Vacation\",\r\n  \"targetAmount\": 5000.0,\r\n  \"savedAmount\": 1500.0\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/savings",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"savings"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST Auth Savings Contribute",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0ZXN0LnVzZXJAdXNlci5jb20iLCJpYXQiOjE3MzY5Njc2MDMsImV4cCI6MTczNjk3MTIwM30.e6J86Lk0XO1r0M-WzMxi5qIZH3ex0M0nYUy7VIZ3-IU",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"contribution\": 200.0\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/savings/contribute/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"savings",
+						"contribute",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Authenticated Spendings",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0ZXN0LnVzZXJAdXNlci5jb20iLCJpYXQiOjE3MzY5Njc2MDMsImV4cCI6MTczNjk3MTIwM30.e6J86Lk0XO1r0M-WzMxi5qIZH3ex0M0nYUy7VIZ3-IU",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/spendings/user/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"spendings",
+						"user",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST Authenticated Spendings",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0ZXN0LnVzZXJAdXNlci5jb20iLCJpYXQiOjE3MzY5Njc2MDMsImV4cCI6MTczNjk3MTIwM30.e6J86Lk0XO1r0M-WzMxi5qIZH3ex0M0nYUy7VIZ3-IU",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"user\": {\r\n    \"id\": 1\r\n  },\r\n  \"category\": \"Food\",\r\n  \"amount\": 180.0,\r\n  \"date\": \"2025-01-15\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/spendings",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"spendings"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT Authenticated Spendings",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0ZXN0LnVzZXJAdXNlci5jb20iLCJpYXQiOjE3MzY5Njc2MDMsImV4cCI6MTczNjk3MTIwM30.e6J86Lk0XO1r0M-WzMxi5qIZH3ex0M0nYUy7VIZ3-IU",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"category\": \"Transportation\",\r\n  \"amount\": 100.0,\r\n  \"date\": \"2025-01-16\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/spendings/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"spendings",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE Authenticated Spendings",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0ZXN0LnVzZXJAdXNlci5jb20iLCJpYXQiOjE3MzY5Njc2MDMsImV4cCI6MTczNjk3MTIwM30.e6J86Lk0XO1r0M-WzMxi5qIZH3ex0M0nYUy7VIZ3-IU",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/spendings/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"spendings",
+						"1"
 					]
 				}
 			},

@@ -1,0 +1,84 @@
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background: #f9f9f9;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* Navbar container for the buttons */
+.nav-links {
+    display: flex;
+    align-items: center;
+    margin-left: auto;  /* Moves the nav-links to the right */
+}
+
+.logout-button {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border: 1px solid #333;
+    background: #fff;
+    color: #333;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 1rem;
+}
+
+.logout-button:hover {
+    background: #333;
+    color: #fff;
+}
+
+.nav-links .login-button,
+.nav-links .register-button { /* Add .register-button styling */
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border: 1px solid #333;
+    background: #fff;
+    color: #333;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 1rem;  /* Space between the buttons */
+}
+
+.nav-links .login-button:hover,
+.nav-links .register-button:hover {
+    background: #333;
+    color: #fff;
+}
+
+/* Tabs section (if needed) */
+.tabs {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+.tab {
+    font-size: 15px;
+    font-family: "Sen-Regular", sans-serif;
+    text-align: center;
+    margin: auto;
+    transition: 0.2s;
+    color: #101541;
+    padding: 10px;
+}
+
+.tab-color {
+    color: #141fd2;
+}
+
+.tab:hover {
+    background-color: transparent;
+    color: #141fd2;
+    cursor: pointer;
+}

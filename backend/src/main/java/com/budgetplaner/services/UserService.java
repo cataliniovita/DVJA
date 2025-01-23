@@ -22,4 +22,9 @@ public class UserService {
 
         return users;
     }
+
+    public User getUserById(Integer id) {
+        return userRepository.findById(id)
+                .orElseThrow(() -> new RuntimeException("User not found"));
+    }
 }

@@ -1,0 +1,55 @@
+/* LandingPage.css */
+
+/* General Layout */
+.landing-page {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    color: #333;
+    text-align: center;
+}
+
+/* Main Content */
+.main-content {
+    flex: 1;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.main-content p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin-bottom: 2rem;
+}
+
+/* Footer */
+.footer {
+    padding: 1rem;
+    background: #f1f1f1;
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.9rem;
+}
+
+.footer a {
+    color: #333;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.logo {
+    width: 50px; /* Adjust size */
+    height: auto; /* Maintain aspect ratio */
+}

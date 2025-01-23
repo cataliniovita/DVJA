@@ -1,0 +1,142 @@
+/* Login.css */
+
+.container-login {
+    background-color: #f0f4f8;
+}
+
+.login-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.input-container {
+    font-family: Arial, sans-serif;
+    background-color: #f0f4f8;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex:1;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.login-page {
+    background-color: #f0f4f8;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+}
+
+.login {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.title-login {
+    color: #333;
+    font-size: 28px;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+.input-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #555;
+}
+
+.input-group input {
+    width: 350px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    background-color: #f9f9f9;
+    color: #333;
+    transition: border-color 0.3s ease;
+}
+
+.input-group input:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+.error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.login-button {
+    width: 100%;
+    padding: 12px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    align-items: center;
+}
+
+.login-button:hover {
+    background-color: #4d4c4c;
+}
+
+.login-button:focus {
+    outline: none;
+}
+
+@media (max-width: 500px) {
+    .login-container {
+        padding: 20px;
+        width: 100%;
+        max-width: 90%;
+    }
+}
+
+.register-link {
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.register-button-link {
+    background: none;
+    border: none;
+    color: #007bff;
+    font-size: 14px;
+    cursor: pointer;
+    text-decoration: underline;
+    padding: 0;
+    margin-left: 5px;
+}
+
+.register-button-link:hover {
+    color: #0056b3;
+}
+
+.register-button-link:focus {
+    outline: none;
+}

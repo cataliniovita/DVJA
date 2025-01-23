@@ -7,19 +7,19 @@ services:
     ports:
       - "8080:8080"
     depends_on:
-      - mysql
+      - postgres
     environment:
-      SPRING_DATASOURCE_URL: jdbc:mysql://mysql:3306/budget_planner
-      SPRING_DATASOURCE_USERNAME: root
-      SPRING_DATASOURCE_PASSWORD: root
+      SPRING_DATASOURCE_URL: jdbc:postgresql://postgres:5432/budget_planner
+      SPRING_DATASOURCE_USERNAME: budget_user
+      SPRING_DATASOURCE_PASSWORD: password123
 
-  mysql:
-    image: mysql:8.0
-    container_name: mysql_container
+  postgres:
+    image: postgres:latest
+    container_name: postgres_container
     environment:
-      MYSQL_ROOT_PASSWORD: root
-      MYSQL_DATABASE: budget_planner
-      MYSQL_USER: budget_user
-      MYSQL_PASSWORD: password
+      POSTGRES_DB: budget_planner
+      POSTGRES_USER: budget_user
+      POSTGRES_PASSWORD: password123
     ports:
-      - "3306:3306"
+      - "5432:5432"
+

@@ -1,0 +1,38 @@
+.card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    flex: 1;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.value {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.subtitle {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.progressBarContainer {
+    background: #eee;
+    border-radius: 5px;
+    height: 8px;
+    width: 100%;
+    overflow: hidden;
+    margin-top: 10px;
+}
+
+.progressBar {
+    background: #101541;
+    height: 100%;
+}
