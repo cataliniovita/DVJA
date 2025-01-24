@@ -32,7 +32,7 @@ export const Login: React.FC = () => {
 
                 // Make the API call to log and receive the token
                 try {
-                    const response = await fetch('http://localhost:8080/auth/login', {
+                    const response = await fetch('http://localhost:8081/auth/login', {
                         method: 'POST',
                         headers: {
                             'Content-Type': 'application/json',

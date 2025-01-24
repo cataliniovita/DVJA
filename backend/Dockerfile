@@ -8,7 +8,7 @@ WORKDIR /app
 COPY ./target/bplanner-0.0.1-SNAPSHOT.jar app.jar
 
 # Expose the port that your application runs on
-EXPOSE 8080
+EXPOSE 8081
 
 # Run the jar file
-ENTRYPOINT ["java", "-jar", "app.jar"]
+ENTRYPOINT ["java", "-jar", "app.jar", "--server.port=8081"]

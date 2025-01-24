@@ -1,0 +1,5 @@
+com/budgetplaner/services/BudgetServiceTest.class
+com/budgetplaner/services/SpendingServiceTest.class
+com/budgetplaner/services/UserServiceTest.class
+com/budgetplaner/services/AuthenticationServiceTest.class
+com/budgetplaner/services/SavingServiceTest.class

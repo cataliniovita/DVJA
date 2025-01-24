@@ -48,6 +48,14 @@ public class JwtAuthenticationFilter extends OncePerRequestFilter {
             return;
         }
 
+        /*
+        # 2.2 Flawed Token Validation.
+        This vulnerability appears because we do not validate the JWT token by
+        ignoring the isTokenValid function call and the extractUsername.
+
+        Comment the inner conditional if and the extractUsername userEmail variable.
+        Hardcode that with a valid username for testing purposes.
+        */
         try {
             final String jwt = authHeader.substring(7);
             final String userEmail = jwtService.extractUsername(jwt);

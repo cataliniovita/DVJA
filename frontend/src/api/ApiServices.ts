@@ -1,4 +1,4 @@
-const API_BASE_URL = "http://localhost:8080";
+const API_BASE_URL = "http://localhost:8081";
 
 export async function getUser(): Promise<any> {
     const token = localStorage.getItem("authToken");

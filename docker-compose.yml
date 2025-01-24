@@ -1,11 +1,19 @@
 version: '3.8'
 
 services:
-  app:
+  frontend:
     build:
-      context: .
+      context: ./frontend  # Path to the React app
     ports:
-      - "8080:8080"
+      - "3000:3000"
+    depends_on:
+      - backend
+
+  backend:
+    build:
+      context: ./backend  # Path to the Spring Boot app
+    ports:
+      - "8081:8081"
     depends_on:
       - postgres
     environment:
@@ -22,4 +30,3 @@ services:
       POSTGRES_PASSWORD: password123
     ports:
       - "5432:5432"
-
